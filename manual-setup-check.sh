@@ -133,17 +133,12 @@ print_table_results "Default Node (>11.x)" 'command -v nvm >/dev/null 2>&1 && nv
 # print_table_results "Default Node (6.11.2)" 'command -v nvm >/dev/null 2>&1 && nvm version default | grep -q "v6.11.2"'
 delimiter
 
-## 15. Java
-# https://stackoverflow.com/questions/36388348/check-if-java-installed-with-bash
-print_table_results "Installed Java" 'command -v java >/dev/null 2>&1 && java -version 2>&1 >/dev/null | grep -q "java version"'
-delimiter
-
-## 16. Google Chrome
+## 15. Google Chrome
 # https://unix.stackexchange.com/questions/63387/single-command-to-check-if-file-exists-and-print-custom-message-to-stdout
 print_table_results "Installed Google Chrome" "[ -f /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome ] && /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --version | grep -q 'Google Chrome'"
 delimiter
 
-## 17. Slack
+## 16. Slack
 print_table_results "Installed Slack" "[ -f /Applications/Slack.app/Contents/MacOS/Slack ] && /Applications/Slack.app/Contents/MacOS/Slack --version | grep -q ''"
 delimiter
 
