@@ -99,9 +99,11 @@ delimiter
 ## 9. Learn
 ## See Student Configuration section.
 
-## 10. Atom
+## 10. Text Editor: VS Code or Atom
+print_table_results "Installed VSCode" "command -v code >/dev/null 2>&1 && code -v | grep -q 'Code'"
+print_table_results "Set VSCode as the Learn Editor" "cat ~/.learn-config | grep ':editor:' | grep -q 'code'"
 print_table_results "Installed Atom" "command -v atom >/dev/null 2>&1 && atom -v | grep -q 'Atom'"
-print_table_results "Learn Editor" "cat ~/.learn-config | grep ':editor:' | grep -q 'atom'"
+print_table_results "Set Atom as the Learn Editor" "cat ~/.learn-config | grep ':editor:' | grep -q 'atom'"
 delimiter
 
 ## 11. Gems (more)
@@ -126,7 +128,7 @@ delimiter
 . ~/.nvm/nvm.sh
 print_table_results "Installed NVM" "command -v nvm >/dev/null 2>&1 && nvm --version | grep -q '[0-9]*\.[0-9]*\.[0-9]*'"
 print_table_results "Installed Node" "command -v node | grep -q '/Users/.*/.nvm/versions/node/v.*/bin/node'"
-print_table_results "Default Node (11.x)" 'command -v nvm >/dev/null 2>&1 && nvm version default | grep -q "v11\|v12"'
+print_table_results "Default Node (>11.x)" 'command -v nvm >/dev/null 2>&1 && nvm version default | grep -q "v11\|v12\|v13"'
 # print_table_results "Default Node (10.x)" 'command -v nvm >/dev/null 2>&1 && nvm version default | grep -q "v10"'
 # print_table_results "Default Node (6.11.2)" 'command -v nvm >/dev/null 2>&1 && nvm version default | grep -q "v6.11.2"'
 delimiter
