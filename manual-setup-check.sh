@@ -101,9 +101,9 @@ delimiter
 
 ## 10. Text Editor: VS Code or Atom
 print_table_results "Installed VSCode" "command -v code >/dev/null 2>&1 && code -v | grep -q '1.'"
-print_table_results "Set VSCode as the Learn Editor" "cat ~/.learn-config | grep ':editor:' | grep -q 'code'"
-print_table_results "Alternative: Installed Atom" "command -v atom >/dev/null 2>&1 && atom -v | grep -q 'Atom'"
-print_table_results "Alternative: Set Atom as the Learn Editor" "cat ~/.learn-config | grep ':editor:' | grep -q 'atom'"
+print_table_results "VSCode set as Learn Editor" "cat ~/.learn-config | grep ':editor:' | grep -q 'code'"
+print_table_results "Alt: Installed Atom" "command -v atom >/dev/null 2>&1 && atom -v | grep -q 'Atom'"
+print_table_results "Alt: Atom set as Learn Editor" "cat ~/.learn-config | grep ':editor:' | grep -q 'atom'"
 delimiter
 
 ## 11. Gems (more)
