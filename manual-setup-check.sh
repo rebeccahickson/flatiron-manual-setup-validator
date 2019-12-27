@@ -100,7 +100,7 @@ delimiter
 ## See Student Configuration section.
 
 ## 10. Text Editor: VS Code or Atom
-print_table_results "Installed VSCode" "command -v code >/dev/null 2>&1 && code -v | grep -q 'Code'"
+print_table_results "Installed VSCode" "command -v code >/dev/null 2>&1 && code -v | grep -q '1.'"
 print_table_results "Set VSCode as the Learn Editor" "cat ~/.learn-config | grep ':editor:' | grep -q 'code'"
 print_table_results "Installed Atom" "command -v atom >/dev/null 2>&1 && atom -v | grep -q 'Atom'"
 print_table_results "Set Atom as the Learn Editor" "cat ~/.learn-config | grep ':editor:' | grep -q 'atom'"
