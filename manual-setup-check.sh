@@ -76,8 +76,8 @@ delimiter
 ## 5. git
 # https://stackoverflow.com/questions/12254076/how-do-i-show-my-global-git-config
 print_table_results "Installed git" "command -v git >/dev/null 2>&1 && git version | grep -q 'git version'"
-print_table_results "Github user config" "command -v git >/dev/null 2>&1 && git config --list | grep -q 'github.user='"
-print_table_results "Github email config" "command -v git >/dev/null 2>&1 && git config --list | grep -q 'github.email='"
+print_table_results "Github user config" "command -v git >/dev/null 2>&1 && git config --list | grep -q 'user.name='"
+print_table_results "Github email config" "command -v git >/dev/null 2>&1 && git config --list | grep -q 'user.email='"
 delimiter
 
 ## 6. Support Libraries
@@ -102,8 +102,6 @@ delimiter
 ## 10. Text Editor: VS Code or Atom
 print_table_results "Installed VSCode" "command -v code >/dev/null 2>&1 && code -v | grep -q '1.'"
 print_table_results "VSCode set as Learn Editor" "cat ~/.learn-config | grep ':editor:' | grep -q 'code'"
-print_table_results "Alt: Installed Atom" "command -v atom >/dev/null 2>&1 && atom -v | grep -q 'Atom'"
-print_table_results "Alt: Atom set as Learn Editor" "cat ~/.learn-config | grep ':editor:' | grep -q 'atom'"
 delimiter
 
 ## 11. Gems (more)
@@ -149,8 +147,8 @@ delimiter
 
 ## 5. git
 echo "Github"
-print_data_row "Username" "command -v git >/dev/null 2>&1 && git config github.user"
-print_data_row "Email" "command -v git >/dev/null 2>&1 && git config github.email"
+print_data_row "Username" "command -v git >/dev/null 2>&1 && git config user.name"
+print_data_row "Email" "command -v git >/dev/null 2>&1 && git config user.email"
 delimiter
 
 ## 9. Learn
