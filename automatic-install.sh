@@ -38,9 +38,9 @@ gem install bundler
 brew install sqlite
 
 # We don't need these yet, but might as well install them
-gem install rails
-gem install phantomjs
 gem install nokogiri
+gem install rails
+
 
 # Installs Node Version Manager
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
