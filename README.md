@@ -15,3 +15,5 @@ At the end, follow the steps printed in the terminal to complete your local envi
 ```sh
 curl -so- https://raw.githubusercontent.com/learn-co-curriculum/flatiron-manual-setup-validator/master/manual-setup-check.sh | bash 2> /dev/null
 ```
+
+For detailed installation instructions for macOS Catalina, go to https://github.com/learn-co-curriculum/environment-mac-os-catalina-setup
