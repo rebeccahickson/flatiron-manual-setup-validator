@@ -42,6 +42,7 @@ brew install sqlite
 
 # We don't need these yet, but might as well install them
 gem install rails
+gem install phantomjs
 gem install nokogiri
 
 # Installs Node Version Manager
