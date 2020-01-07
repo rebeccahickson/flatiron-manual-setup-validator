@@ -24,13 +24,13 @@ brew link gnupg
 brew install zsh
 chsh -s /bin/zsh
 
-# Installs RVM, which updates 
+# Installs RVM
 curl -sSL https://get.rvm.io | bash
 source ~/.zprofile
 
 # Installs Ruby 2.6.1 and sets it as default
 rvm install 2.6.1
-rvm use 2.6.1 --default
+rvm --default use 2.6.1 
 
 # Installs Learn and Bundler
 gem update --system
@@ -99,7 +99,7 @@ echo "   - Copy this token"
 echo "   - Run 'learn whoami' in the terminal to start the setup process"
 echo "   - Paste your token into the terminal when prompted"
 echo ""
-echo "4. Get a Text Editor"
+echo "4. Get a Text Editor and set it as the default editor in ~/.learn-config"
 echo ""
 echo "5. Install Chrome and Slack"
 echo ""
@@ -107,5 +107,6 @@ echo "Run the following to verify successful installation:"
 echo ""
 echo "curl -so- https://raw.githubusercontent.com/learn-co-curriculum/flatiron-manual-setup-validator/master/manual-setup-check.sh | bash 2> /dev/null"
 echo ""
-
+echo "See https://github.com/learn-co-curriculum/environment-mac-os-catalina-setup for more information"
+echo ""
 
