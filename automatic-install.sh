@@ -75,6 +75,9 @@ curl "https://raw.githubusercontent.com/flatiron-school/dotfiles/master/.zprofil
 # Sets default .gitconfig
 curl "https://raw.githubusercontent.com/flatiron-school/dotfiles/master/gitconfig" -o "$HOME/.gitconfig"
 
+# Fixes potential RVM PATH issues after dotfiles are modified
+rvm get stable --auto-dotfiles
+
 echo ""
 echo "#########################"
 echo "# INSTALLATION COMPLETE #"
@@ -109,5 +112,4 @@ echo ""
 echo "curl -so- https://raw.githubusercontent.com/learn-co-curriculum/flatiron-manual-setup-validator/master/manual-setup-check.sh | bash 2> /dev/null"
 echo ""
 echo "See https://github.com/learn-co-curriculum/environment-mac-os-catalina-setup for more information"
-echo ""
 
