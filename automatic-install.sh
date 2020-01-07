@@ -13,12 +13,9 @@ then
   ssh-keygen
 fi
 
-cat ~/.ssh/id_rsa.pub
-
 # Install common support libraries
 brew install gmp
 brew install gnupg
-brew link gnupg
 
 # Installs Zsh and sets Zsh as the default shell
 brew install zsh
