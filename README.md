@@ -2,6 +2,8 @@
 
 Scripts to automatically install required tools and verify successful installation based on the manual macOS setup guide.
 
+**Note:** These scripts are for macOS users **only** and will not work for Windows users.
+
 ## Instructions
 
 To run the automatic install script, run the following in terminal:
