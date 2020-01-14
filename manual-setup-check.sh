@@ -92,7 +92,7 @@ print_table_results "Test RVM PATH" "command -v rvm >/dev/null 2>&1 && rvm list 
 delimiter
 
 ## 8. Gems
-print_table_results "Gem: learn-co" "command -v gem >/dev/null 2>&1 && gem list | grep -q 'learn-co'"
+print_table_results "Gem: learn-co" "command -v gem >/dev/null 2>&1 && gem list | grep -q 'learn-co '"
 print_table_results "Gem: bundler" "command -v gem >/dev/null 2>&1 && gem list | grep -q 'bundler'"
 delimiter
 
