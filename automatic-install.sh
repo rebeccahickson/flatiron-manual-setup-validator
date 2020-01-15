@@ -157,8 +157,12 @@ else
   echo "================================="
   echo "================================="
   echo ""
-  echo "> Follow the manual installation steps here to ensure everything is configured correctly: https://github.com/learn-co-curriculum/environment-mac-os-catalina-setup/blob/master/README.md#step-by-step-instructions-for-manual-installation"
+  echo "> Review the warning(s) listed above before continuing to Steps 2-6: https://github.com/learn-co-curriculum/environment-mac-os-catalina-setup/blob/master/README.md#step-2---configure-git"
   echo ""
-  echo "> Use the validator scriptto see what has and hasn't installed correctly: https://github.com/learn-co-curriculum/environment-mac-os-catalina-setup/blob/master/README.md#verify-installations"
+  echo "> After completing all configuration steps, run the validation script: https://github.com/learn-co-curriculum/environment-mac-os-catalina-setup/blob/master/README.md#step-7---verify-installations"
+  echo ""
+  echo "> If you encounter any issues or the validation script indicates failed installs, follow the manual installation steps here to ensure everything is configured correctly: https://github.com/learn-co-curriculum/environment-mac-os-catalina-setup/blob/master/README.md#step-by-step-instructions-for-manual-installation"
+  echo ""
+  
   echo ""
 fi
