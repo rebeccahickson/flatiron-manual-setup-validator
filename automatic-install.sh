@@ -75,6 +75,8 @@ curl "https://raw.githubusercontent.com/flatiron-school/dotfiles/master/gitconfi
 
 # Fixes potential RVM PATH issues after dotfiles are modified
 rvm get stable --auto-dotfiles
+rvm --default use 2.6.1 
+rvm list
 
 checks_pass=true
 if ! brew list | grep -q 'gmp'; then
