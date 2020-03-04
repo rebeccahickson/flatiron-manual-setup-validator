@@ -24,24 +24,13 @@ chsh -s /bin/zsh
 # Installs RVM
 gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
 curl -sSL https://get.rvm.io | bash
+cat ~/.zprofile
+cat ~/.zshrc
 source ~/.zprofile
 
 # Installs Ruby 2.6.1 and sets it as default
 rvm install 2.6.1
 rvm --default use 2.6.1 
-
-# Installs Learn and Bundler
-gem update --system
-gem install learn-co
-gem install bundler
-
-# Installs SQLite
-brew install sqlite
-
-# We don't need these yet, but might as well install them
-gem install nokogiri
-gem install rails
-
 
 # Installs Node Version Manager
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
@@ -57,7 +46,8 @@ nvm alias default node
 # Backs up dot files
 mv ~/.irbrc{,.bak}
 mv ~/.gitignore{,.bak}
-mv ~/.zprofile{,.bak} 
+mv ~/.zprofile{,.bak}
+mv ~/.zshrc{,.bak} 
 mv ~/.gitconfig{,.bak}
 
 # Adds additional functionality to IRB
@@ -70,15 +60,30 @@ git config --global core.excludesfile $HOME/.gitignore
 # Adds .zprofile content
 curl "https://raw.githubusercontent.com/flatiron-school/dotfiles/master/.zprofile" -o "$HOME/.zprofile"
 
+# Adds .zshrc content
+curl "https://raw.githubusercontent.com/flatiron-school/dotfiles/master/.zshrc" -o "$HOME/.zshrc"
+
 # Sets default .gitconfig
 curl "https://raw.githubusercontent.com/flatiron-school/dotfiles/master/gitconfig" -o "$HOME/.gitconfig"
 
-source ~/.zprofile
+source ~/.zshrc
 
 # Fixes potential RVM PATH issues after dotfiles are modified
 rvm get stable --auto-dotfiles
 rvm --default use 2.6.1 
 rvm list
+
+# Installs Learn and Bundler
+gem update --system
+gem install learn-co
+gem install bundler
+
+# Installs SQLite
+brew install sqlite
+
+# We don't need these yet, but might as well install them
+gem install nokogiri
+gem install rails
 
 checks_pass=true
 if ! brew list | grep -q 'gmp'; then
