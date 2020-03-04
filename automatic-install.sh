@@ -73,6 +73,8 @@ curl "https://raw.githubusercontent.com/flatiron-school/dotfiles/master/.zprofil
 # Sets default .gitconfig
 curl "https://raw.githubusercontent.com/flatiron-school/dotfiles/master/gitconfig" -o "$HOME/.gitconfig"
 
+source ~/.zprofile
+
 # Fixes potential RVM PATH issues after dotfiles are modified
 rvm get stable --auto-dotfiles
 rvm --default use 2.6.1 
