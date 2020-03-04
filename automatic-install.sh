@@ -88,6 +88,11 @@ brew install sqlite
 gem install nokogiri
 gem install rails
 
+# Install PostgreSQL
+brew install postgres
+brew services start postgresql
+gem install pg
+
 checks_pass=true
 if ! brew list | grep -q 'gmp'; then
   echo ""
