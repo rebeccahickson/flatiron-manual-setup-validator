@@ -23,10 +23,10 @@ chsh -s /bin/zsh
 
 # Installs RVM
 gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
-curl -sSL https://get.rvm.io | bash
-cat ~/.zprofile
-cat ~/.zshrc
+curl -sSL https://get.rvm.io | bash -s stable --ruby --auto-dotfiles
+
 source ~/.zprofile
+source ~/.zshrc
 
 # Installs Ruby 2.6.1 and sets it as default
 rvm install 2.6.1
@@ -37,6 +37,7 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | b
 echo 'export NVM_DIR="$HOME/.nvm"' >> ~/.zprofile
 echo '[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"' >> ~/.zprofile
 source ~/.zprofile
+source ~/.zshrc
 
 # Installs newest version of Node
 nvm install node
@@ -66,11 +67,13 @@ curl "https://raw.githubusercontent.com/flatiron-school/dotfiles/master/.zshrc" 
 # Sets default .gitconfig
 curl "https://raw.githubusercontent.com/flatiron-school/dotfiles/master/gitconfig" -o "$HOME/.gitconfig"
 
+source ~/.zprofile
 source ~/.zshrc
 
 # Fixes potential RVM PATH issues after dotfiles are modified
 rvm get stable --auto-dotfiles
-rvm --default use 2.6.1 
+rvm --default use 2.6.1
+rvm alias create default 2.6.1
 rvm list
 
 # Installs Learn and Bundler
