@@ -105,7 +105,6 @@ print_table_results "VSCode set as Learn Editor" "cat ~/.learn-config | grep ':e
 delimiter
 
 ## 11. Gems (more)
-print_table_results "Gem: phantomjs" "command -v gem >/dev/null 2>&1 && gem list | grep -q 'phantomjs'"
 print_table_results "Gem: nokogiri" "command -v gem >/dev/null 2>&1 && gem list | grep -q 'nokogiri'"
 delimiter
 
