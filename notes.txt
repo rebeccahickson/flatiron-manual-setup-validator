@@ -1,0 +1,9 @@
+Split VS Code validator looks for .learn-config, which will only appear once the Learn account is validated
+
+Slack for Windows is installed in the User's AppData folder, so there isn't a universal directory we can check
+
+Let's get rid of the Rails gem and add it to the Rails intro
+
+Nokogiri too maybe?
+
+Running RVM validator on WSL produces a PATH warning. Running the suggested --auto-dot-files fix does not seem to work, but the temporary fix, `rvm use 2.6.1` will suppress the warning
