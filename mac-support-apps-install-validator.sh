@@ -43,7 +43,7 @@ delimiter () {
 }
 
 validation_header () {
-  printf "\n${CYAN}************ VALIDATING SETUP ************${NC}\n\n"
+  printf "\n${CYAN}************ VALIDATING SUPPORT APP INSTALLATIONs ************${NC}\n\n"
 }
 
 configuration_header () {
